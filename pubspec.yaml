@@ -1,6 +1,6 @@
-name: ringtone_set_mul
+name: ringtone_set
 description: Flutter Plugin for setting devices default ringtone or notification sound.
-version: 0.0.1
+version: 0.0.3
 repository: https://github.com/rtacr/ringtone_set
 
 environment:
@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: acr.rt.ringtone_set_mul
+        package: acr.rt.ringtone_set
         pluginClass: RingtoneSetMulPlugin
       ios:
         pluginClass: RingtoneSetMulPlugin
