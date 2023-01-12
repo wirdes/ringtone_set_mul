@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ringtone_set/ringtone_set.dart';
+import 'package:ringtone_set_mul/ringtone_set_mul.dart.dart';
 
 void main() {
   runApp(MyApp());

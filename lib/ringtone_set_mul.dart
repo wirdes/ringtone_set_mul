@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:ringtone_set/src/setter_functions.dart';
+import 'package:ringtone_set_mul/src/setter_functions.dart';
 
 /// A class for setting ringtones, notifications, alarms.
 class RingtoneSet {

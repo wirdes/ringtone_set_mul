@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ringtone_set/ringtone_set.dart';
+import 'package:ringtone_set_mul/ringtone_set_mul.dart.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('ringtone_set');
