@@ -4,4 +4,4 @@
 * Initial Release
 
 ## 0.0.2
-- Updatedd Readme.md
+- fix dep
