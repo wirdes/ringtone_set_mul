@@ -1,4 +1,4 @@
-group 'acr.rt.ringtone_set_mul'
+group 'acr.rt.ringtone_set'
 version '1.0'
 
 buildscript {

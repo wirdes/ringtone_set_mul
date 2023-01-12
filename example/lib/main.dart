@@ -21,7 +21,8 @@ class _MyAppState extends State<MyApp> {
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {}
+  Future<void> initPlatformState() async {
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,25 +38,31 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 TextButton(
                   onPressed: () async {
-                    bool success = false;
-                    try {
-                      success = await RingtoneSet.setMultipleAsset(
-                          "assets/h2.mp3",
-                          isAlarm: true,
-                          isNotification: true,
-                          isRingtone: true);
-                    } on PlatformException {
-                      success = false;
+                    if(await RingtoneSet.isWriteSettingsGranted()){
+
+                    }else{
+                      RingtoneSet.reqSystemPermissions();
                     }
-                    var snackBar;
-                    if (success) {
-                      snackBar = SnackBar(
-                        content: Text("Multiple set successfully!"),
-                      );
-                    } else {
-                      snackBar = SnackBar(content: Text("Error"));
-                    }
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    RingtoneSet.reqSystemPermissions();
+                    // bool success = false;
+                    // try {
+                    //   success = await RingtoneSet.setMultipleAsset(
+                    //       "assets/h2.mp3",
+                    //       isAlarm: true,
+                    //       isNotification: true,
+                    //       isRingtone: true);
+                    // } on PlatformException {
+                    //   success = false;
+                    // }
+                    // var snackBar;
+                    // if (success) {
+                    //   snackBar = SnackBar(
+                    //     content: Text("Multiple set successfully!"),
+                    //   );
+                    // } else {
+                    //   snackBar = SnackBar(content: Text("Error"));
+                    // }
+                    // ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   },
                   child: Text("Hey Multiple"),
                 ),

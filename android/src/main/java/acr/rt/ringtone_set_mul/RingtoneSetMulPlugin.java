@@ -1,4 +1,4 @@
-package android.src.main.java.acr.rt.ringtone_set_mul;
+package acr.rt.ringtone_set_mul;
 
 import android.content.ContentValues;
 import android.content.Context;
