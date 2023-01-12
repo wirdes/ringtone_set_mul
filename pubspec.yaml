@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: acr.rt.ringtone_set
+        package: acr.rt.ringtone_set_mul
         pluginClass: RingtoneSetMulPlugin
       ios:
         pluginClass: RingtoneSetMulPlugin

@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
-import 'package:ringtone_set_mul/ringtone_set_mul.dart.dart';
 
 const MethodChannel _channel = const MethodChannel('ringtone_set');
 

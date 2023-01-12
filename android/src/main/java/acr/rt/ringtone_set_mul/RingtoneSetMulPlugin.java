@@ -29,16 +29,16 @@ import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
- * RingtoneSetPlugin
+ * RingtoneSetMulPlugin
  */
-public class RingtoneSetPlugin implements FlutterPlugin, MethodCallHandler {
-    private static RingtoneSetPlugin instance;
+public class RingtoneSetMulPlugin implements FlutterPlugin, MethodCallHandler {
+    private static RingtoneSetMulPlugin instance;
     private MethodChannel channel;
     private Context mContext;
 
     public static void registerWith(Registrar registrar) {
         if (instance == null) {
-            instance = new RingtoneSetPlugin();
+            instance = new RingtoneSetMulPlugin();
         }
         instance.onAttachedToEngine(registrar.context(), registrar.messenger());
     }
@@ -341,7 +341,10 @@ public class RingtoneSetPlugin implements FlutterPlugin, MethodCallHandler {
         } else if (call.method.equals("isWriteGranted")) {
             boolean granted = isSystemWritePermissionGranted();
             result.success(granted);
-        }else {
+        } else if (call.method.equals("reqSystemPermissions")) {
+            requestSystemWritePermission();
+            result.success(true);
+        } else {
             result.notImplemented();
         }
 

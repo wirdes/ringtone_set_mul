@@ -45,7 +45,7 @@ dependencies:
 Import the package
 
 ```Dart
-import 'package:ringtone_set_mul/ringtone_set_mul.dart.dart';
+import 'package:ringtone_set_mul/ringtone_set_mul.dart';
 ```
 
 Call the function

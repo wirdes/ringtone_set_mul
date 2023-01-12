@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  ringtone_set:
+  ringtone_set_mul:
     # When depending on this package from a real application you should use:
     #   ringtone_set: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

@@ -55,6 +55,10 @@ class RingtoneSet {
     return granted;
   }
 
+  static void get reqSystemPermissions {
+    _channel.invokeMethod('reqSystemPermissions');
+  }
+
   /// Sets ringtone from asset.
   static Future<bool> setRingtone(String asset) async {
     return setFromAsset(
