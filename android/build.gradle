@@ -30,7 +30,6 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-    ndkVersion "25.1.8937393"
 }
 dependencies {
     implementation 'androidx.annotation:annotation:1.2.0'
